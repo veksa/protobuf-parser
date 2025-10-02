@@ -1,0 +1,53 @@
+{
+  "name": "@veksa/protobuf-parser",
+  "version": "1.0.2",
+  "description": "Lightweight, configurable logging library for JavaScript applications",
+  "homepage": "https://github.com/veksa/protobuf-parser",
+  "packageManager": "yarn@4.10.3",
+  "author": {
+    "name": "Aleksandr Khizhnyi",
+    "email": "mendler88@gmail.com"
+  },
+  "main": "./dist/cjs/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/cjs/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "logger",
+    "logging",
+    "typescript",
+    "console",
+    "debug",
+    "browser-logging",
+    "timestamps"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn clean && tsup",
+    "compile": "tsc --noEmit",
+    "test": "jest",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.6.2",
+    "jest": "^30.2.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.4.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@veksa/protobuf-tokenizer": "^1.0.1"
+  }
+}
