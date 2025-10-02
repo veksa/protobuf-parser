@@ -27,7 +27,9 @@ export interface Field {
     tag: number;
     map?: {
         from: string;
+        fromComment?: string;
         to: string;
+        toComment?: string;
     };
     oneof?: string;
     anyof?: string;
