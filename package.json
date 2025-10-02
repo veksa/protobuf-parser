@@ -1,7 +1,7 @@
 {
   "name": "@veksa/protobuf-parser",
   "version": "1.0.2",
-  "description": "Lightweight, configurable logging library for JavaScript applications",
+  "description": "Lightweight Protocol Buffers parser for JavaScript and TypeScript applications",
   "homepage": "https://github.com/veksa/protobuf-parser",
   "packageManager": "yarn@4.10.3",
   "author": {
@@ -23,13 +23,13 @@
     "dist"
   ],
   "keywords": [
-    "logger",
-    "logging",
+    "protobuf",
+    "protocol-buffers",
+    "parser",
     "typescript",
-    "console",
-    "debug",
-    "browser-logging",
-    "timestamps"
+    "javascript",
+    "proto3",
+    "grpc"
   ],
   "scripts": {
     "clean": "rimraf dist",
